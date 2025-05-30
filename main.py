@@ -37,7 +37,7 @@ def upload():
         prompt = base_prompt + f"\"{manual_text}\""
 
         response = openai.ChatCompletion.create(
-            model="gpt-4",
+            model="gpt-4o",
             messages=[
                 {"role": "system", "content": "You're trained on the best smart clapbacks from social media. Respond with wit, intelligence, and bite."},
                 {"role": "user", "content": prompt}
